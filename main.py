@@ -69,12 +69,12 @@ print("-------------------------")
 # Prepare and send email
 msg = MIMEText(content, 'plain', 'utf-8')
 msg['Subject'] = subject
-msg['From'] = 'jha.aadarsha2060@gmail.com'
-msg['To'] = '023bscit050@sxc.edu.np'
+msg['From'] = 'your@gmail.com'
+msg['To'] = 'your@gmail.com'
 
 with smtplib.SMTP('smtp.gmail.com', 587) as server:
     server.starttls()
-    server.login('jha.aadarsha2060@gmail.com', 'qdzc tagd zkzj mawx')  # App password
+    server.login('your@gmail.com', 'your_password')  # App password
     server.send_message(msg)
 
 print("✅ Email sent successfully.")
